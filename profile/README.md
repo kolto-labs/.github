@@ -47,7 +47,7 @@ Installers for macOS, Linux and Windows are attached to every [kq release](https
 
 - One canonical repo per project. Decisions in public issues and RFCs.
 - MIT where we can, GPL where a project chooses copyleft. Released code stays open.
-- Every project credits its prior art: TSLPatcher, KotOR Tool, DeNCS, xoreos, reone, KotOR.js and the rest. See [credits](https://koltolabs.bocloud.workers.dev/credits/).
+- Every project credits its prior art: TSLPatcher, KotOR Tool, DeNCS, xoreos and the rest. See [credits](https://koltolabs.bocloud.workers.dev/credits/).
 - [Contributing](https://github.com/kolto-labs/.github/blob/main/CONTRIBUTING.md) · [Code of Conduct](https://koltolabs.bocloud.workers.dev/#code-of-conduct) · [Reverse-engineering policy](https://koltolabs.bocloud.workers.dev/#re-policy) · [Security](https://github.com/kolto-labs/.github/blob/main/SECURITY.md)
 
 **We are looking for** reverse engineers, Rust developers, NWScript and Lua modders, test authors and technical writers. No invitation needed.
