@@ -8,29 +8,28 @@
         LIFE SUPPORT FOR THE ODYSSEY ENGINE  ·  PROTECTION: NONE
 ```
 
-**Open-source tools for _Star Wars: Knights of the Old Republic_ I & II.** We reverse-engineer, patch and extend the Odyssey engine, and we publish everything we learn.
+**Open-source tools for _Star Wars: Knights of the Old Republic_ I & II.** We reverse-engineer, patch and extend the Odyssey engine.
 
-[Website](https://koltolabs.bocloud.workers.dev) · [Roadmap](https://koltolabs.bocloud.workers.dev/roadmap/) · [FAQ](https://koltolabs.bocloud.workers.dev/faq/) · [Contribute](https://github.com/kolto-labs/.github/blob/main/CONTRIBUTING.md) · Discord: invite coming soon
+[Website](https://koltolabs.bocloud.workers.dev) · [Roadmap](https://koltolabs.bocloud.workers.dev/roadmap/) · [FAQ](https://koltolabs.bocloud.workers.dev/faq/) · [Contribute](https://github.com/kolto-labs/.github/blob/main/CONTRIBUTING.md)
 
 ## Releases
 
 | Project                                                         | What it does                                                                           | Status                                                                                                                                                                                                                 | License          |
 | --------------------------------------------------------------- | -------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------- |
-| [**kq**](https://github.com/kolto-labs/kq)                       | Query a KotOR install like it was plain text. `rg` + `jq` for game data.               | ![released](https://img.shields.io/badge/status-released-7dff9a?style=flat-square&labelColor=0b1016) ![version](https://img.shields.io/github/v/release/kolto-labs/kq?style=flat-square&labelColor=0b1016&color=19e3c1) | MIT              |
-| [**kotor-formats**](https://github.com/kolto-labs/kotor-formats) | Shared Rust readers/writers: GFF, 2DA, TLK, SSF, ERF/RIM, NCS. Byte-exact round trips. | ![released](https://img.shields.io/badge/status-released-7dff9a?style=flat-square&labelColor=0b1016) ![early](https://img.shields.io/badge/API-early-ffb000?style=flat-square&labelColor=0b1016)                       | MIT              |
-| [**mod-builds**](https://github.com/kolto-labs/mod-builds)       | Release tooling for the KOTOR Community Portal mod builds.                             | ![released](https://img.shields.io/badge/status-released-7dff9a?style=flat-square&labelColor=0b1016)                                                                                                                   | upstream         |
+| [**kq**](https://github.com/kolto-labs/kq)                       | Query a KotOR install like it was plain text, the way `rg` and `jq` query code and JSON. | ![released](https://img.shields.io/badge/status-released-7dff9a?style=flat-square&labelColor=0b1016) ![version](https://img.shields.io/github/v/release/kolto-labs/kq?style=flat-square&labelColor=0b1016&color=19e3c1) | MIT              |
+| [**kotor-formats**](https://github.com/kolto-labs/kotor-formats) | Shared Rust readers and writers for GFF, 2DA, TLK, SSF, ERF/RIM and NCS, with byte-exact round trips. | ![released](https://img.shields.io/badge/status-released-7dff9a?style=flat-square&labelColor=0b1016) ![early](https://img.shields.io/badge/API-early-ffb000?style=flat-square&labelColor=0b1016)                       | MIT              |
+
+[mod-builds](https://github.com/kolto-labs/mod-builds) is our public fork of the KOTOR Community Portal's mod-build repository.
 
 ## In the tank
 
-| Project        | What it will do                                                                                                                       | Status                                                                                                             |
+| Project        | What it is                                                                                                                            | Status                                                                                                             |
 | -------------- | ------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ |
-| **Hyperstim**  | Script extender. On the order of **10,000** new engine events and script commands for NWScript, hooked into the original executables. | ![in development](https://img.shields.io/badge/status-in%20development-ffb000?style=flat-square&labelColor=0b1016) |
-| **Adrenal**    | Lua scripting injected into the games. Subscribe to Hyperstim events, call engine commands, hot-reload.                               | ![in development](https://img.shields.io/badge/status-in%20development-ffb000?style=flat-square&labelColor=0b1016) |
-| **Kolto Tank** | Test harness. Boots the real game under instrumentation and asserts on engine state, so mods can be tested in CI.                     | ![in development](https://img.shields.io/badge/status-in%20development-ffb000?style=flat-square&labelColor=0b1016) |
-| **Hrakert**    | Matching decompilation of `swkotor.exe` and `swkotor2.exe`. No public one exists yet, as far as we know.                              | ![planned](https://img.shields.io/badge/status-planned-7f93a0?style=flat-square&labelColor=0b1016)                 |
-| **Ahto**       | Docs hub: formats, engine behaviour, command references.                                                                              | ![planned](https://img.shields.io/badge/status-planned-7f93a0?style=flat-square&labelColor=0b1016)                 |
-
-No release dates. Statuses mean what they say.
+| **Hyperstim**  | A script extender for KotOR and TSL. | ![in development](https://img.shields.io/badge/status-in%20development-ffb000?style=flat-square&labelColor=0b1016) |
+| **Adrenal**    | Scripting for KotOR and TSL mods. | ![in development](https://img.shields.io/badge/status-in%20development-ffb000?style=flat-square&labelColor=0b1016) |
+| **Kolto Tank** | A test bench for mods. | ![in development](https://img.shields.io/badge/status-in%20development-ffb000?style=flat-square&labelColor=0b1016) |
+| **Hrakert**    | A long-term project. | ![planned](https://img.shields.io/badge/status-planned-7f93a0?style=flat-square&labelColor=0b1016)                 |
+| **Ahto**       | The Kolto Labs docs hub. | ![planned](https://img.shields.io/badge/status-planned-7f93a0?style=flat-square&labelColor=0b1016)                 |
 
 ## Quick start
 
@@ -45,12 +44,12 @@ Installers for macOS, Linux and Windows are attached to every [kq release](https
 
 ## How we work
 
-- One canonical repo per project. Decisions in public issues and RFCs.
-- MIT where we can, GPL where a project chooses copyleft. Released code stays open.
-- Every project credits its prior art: TSLPatcher, KotOR Tool, DeNCS, xoreos and the rest. See [credits](https://koltolabs.bocloud.workers.dev/credits/).
+- Each released project has one repository, and bugs and feature requests go in its public issues.
+- Our released projects are MIT-licensed.
+- We build on TSLPatcher, KotOR Tool, DeNCS, xoreos and more. See [credits](https://koltolabs.bocloud.workers.dev/credits/).
 - [Contributing](https://github.com/kolto-labs/.github/blob/main/CONTRIBUTING.md) · [Code of Conduct](https://koltolabs.bocloud.workers.dev/#code-of-conduct) · [Reverse-engineering policy](https://koltolabs.bocloud.workers.dev/#re-policy) · [Security](https://github.com/kolto-labs/.github/blob/main/SECURITY.md)
 
-**We are looking for** reverse engineers, Rust developers, NWScript and Lua modders, test authors and technical writers. No invitation needed.
+**We are looking for** reverse engineers, Rust developers, NWScript modders, test authors and technical writers.
 
 ---
 
