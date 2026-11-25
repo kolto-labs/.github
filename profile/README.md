@@ -10,6 +10,5 @@ are the most useful thing you can send us.
 
 <sub>Independent and non-commercial. Not affiliated with Lucasfilm, Disney, BioWare,
 Electronic Arts, Obsidian, Aspyr or Saber Interactive. No game assets or game code in
-these repositories.<!-- Uncomment once a FUNDING.yml line is live:
- If you'd like to chip in for hosting and CI, the <b>Sponsor</b> button on any
-repository lists the ways. --></sub>
+these repositories. If you'd like to chip in for hosting and CI, the <b>Sponsor</b> button on any
+repository lists the ways.</sub>
